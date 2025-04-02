@@ -40,10 +40,18 @@ html.dark {
   border: 1px solid rgb(var(--box-border));
  }
 }
-
+@layer components {
+  .base-container {
+    @apply mx-auto max-w-7xl w-full px-5 sm:px-8 md:px-12 lg:px-20;
+  }
+  .button{
+    @apply px-6 py-3 rounded-full outline-none cursor-pointer
+                 relative overflow-hidden border border-transparent bg-violet-600 ;
+  }
+}
 html{
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: sans-serif;
 }

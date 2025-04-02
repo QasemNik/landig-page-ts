@@ -7,7 +7,7 @@ import  Title  from "../shared/Title";
 export const Pricing = () => {
   return (
     <section id="pricing" className="py-5">
-      {" "}
+       
       <Container className="text-center">
         <Title>Pricing </Title>
         <Paragraph className="mt-4">
@@ -33,11 +33,11 @@ export const Pricing = () => {
                     </div>
                   )}
                   <h3 className="text-2xl font-semibold text-heading-1">
-                    {" "}
+                     
                     {plan.title}
                   </h3>
                   <p className="mt-4 text-4xl font-bold text-heading-1">
-                    {" "}
+                     
                     {plan.price}
                   </p>
                   <ul className="mt-6 flex-1 space-y-3 text-left text-heading-3">

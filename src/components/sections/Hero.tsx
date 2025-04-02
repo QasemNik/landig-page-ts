@@ -1,3 +1,4 @@
+import { SvgHeroEmail } from "../../svg/svgs";
 import Button from "../shared/Button";
 import { Container } from "../shared/Container";
 import Paragraph  from "../shared/Paragraph";
@@ -6,7 +7,6 @@ import { Numbers } from "./Number";
 export  const Hero = () => {
   return (
     <section className="relative pt-32 lg:pt-36">
-      {" "}
       <Container className="flex flex-col lg:flex-row gap-10 lg:gap-12">
         <div className="absolute w-full lg:w-1/2 inset-y-0 lg:right-0">
           <span
@@ -24,7 +24,7 @@ export  const Hero = () => {
           <h1 className="text-heading-1 text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold">
             Empower Your Business
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600 ml-2">
-              with AI{" "}
+              with AI 
             </span>
           </h1>
           <Paragraph className="mt-8">
@@ -42,29 +42,15 @@ export  const Hero = () => {
                             focus-within:border-primary focus-within:bg-body"
               >
                 <span className="min-w-max pr-2 border-r border-box-border">
-                  {" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z"
-                    />
-                  </svg>
+                  
+                 <SvgHeroEmail/>
                 </span>
                 <input
                   type="email"
                   placeholder="johndoe@gmail.com"
                   className="w-full py-3 outline-none bg-transparent"
                 />
-                <Button className="min-w-max text-white  bg-gradient-to-tl from-violet-500 via-indigo-500  dark:bg-violet-600 ">
+                <Button className="min-w-max text-white  bg-gradient-to-tl from-violet-500 via-indigo-500  dark:bg-violet-600 " onClick={() => console.log('Get Started button clicked')}>
                   <span className="relative z-[5] ">Get Started</span>
                 </Button>
               </form>
